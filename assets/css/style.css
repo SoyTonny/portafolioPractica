@@ -286,13 +286,13 @@ button {
     justify-content: center;
     background-image: url(/assets/img/fondochido.jpeg);
     opacity: 0.7;
+    padding-top: 90px;
 }
 
 .container__educacion {
     width: 1024px;
     display: flex;
     justify-content: space-between;
-    /* background-color: #170120; */
 }
 
 .estudios {
@@ -391,7 +391,6 @@ button {
 }
 
 .habilidades__titulo {
-    /* font-size: var(--big-font); */
     font-family: var(--fuente);
     font-weight: bold;
     padding-bottom: 15px;
@@ -536,23 +535,24 @@ button {
     background-image: url(/assets/img/imagen\ de\ fondo\ opcional.webp);
     background-size: cover;
     opacity: 0.92;
+    display: flex;
+    padding-top: 90px;
+
 }
 
 .container__contacto {
     width: 1024px;
     display: flex;
     column-gap: 200px;
-    padding-top: 150px;
-    padding-bottom: 150px;
 }
 
 .contacto__text {
+    width: 50%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
     flex-direction: column;
     text-align: center;
-    width: 50%;
     padding-left: 70px;
 
 }
@@ -730,16 +730,19 @@ button {
     /* Aqui comienza educacion */
 
 
-
-    .educacion {
-        width: 100%;
-    }
-
     .container__educacion {
-        width: 100%;
-        display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .estudios {
+        padding-right: 0;
+    }
+
+    .educacion__titulo {
+        justify-content: center;
     }
 
 
@@ -747,16 +750,13 @@ button {
 
     .habilidades__container {
         width: 100%;
-        display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         margin: 0;
         padding: 0px 20px ;
     }
 
     .habilidades__caja {
-        display: flex;
         width: 100%;
         margin: 0 auto;
         padding: 0 0;
@@ -785,35 +785,54 @@ button {
 
     /* Aqui comienzo proyectos */
 
-    .proyectos {
-        width: 100%;
-    }
-
     .proyecto__container {
         width: 100%;
-        display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        
+    }
+
+    .cajadeproyectos {
+        margin-top: 50px;
+    }
+    
+    .divparaproyecto {
+        width: 270px;
+        height: 300px;
+    
     }
 
 
     /*Aqui comienza contacto*/
 
-    .contacto {
-        width: 100%;
-    }
 
     .container__contacto {
         width: 100%;
-        display: flex;
         flex-direction: column;
         margin: 0 0;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     .contacto__text {
-        display: flex;
-        padding: 0;
+        width: 100%;
+        justify-content:space-between;
+        align-content: center;
+        align-items: center;
+        padding-left: 0;
+    
     }
 
+    .contacto__form {
+        width: 75%;
+        margin: 0 0 0 0;
+
+    }
+
+    .contact__inputtext {
+        width: 100%;
+        margin: 0 0;
+    }
 
 }
