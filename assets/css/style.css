@@ -1,0 +1,753 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --fuente: 'Roboto Slab';
+    --fuente-cursiva: 'Yellowtail';
+    --big-font: 2rem;
+    --medium-font: 1.5rem;
+    --normal-font: 1rem;
+    --small-font: .8rem;
+
+    --sp-0-5: .5rem;
+    --sp-0-75: .75rem;
+    --sp-1: 1rem;
+    --sp-1-5: 1.5rem;
+    --sp-2: 2rem;
+    --sp-2-5: 2.5rem;
+    --sp-3: 3rem;
+
+    --z-fixed: 100;
+    --z-modal: 200;
+
+}
+
+html{
+    font-size: 16px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    color: #fff;
+    background-color: #888;
+    width: auto
+}
+
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: #50fff9;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 2px;
+}
+
+.header{
+position: fixed;
+background: linear-gradient(to right, #22d9ea, #490863);
+width: 100%;
+left: 0;
+top: 0;
+z-index: 99;
+height: 90px;
+
+}
+
+.img__header{
+    height: 60px;
+    width: 50%;
+    display: flex;
+}
+
+.img__header img{
+    height: 100%;
+    border-radius: 50%;
+    border: #170120 solid 3px;
+}
+
+.img__header h1{
+    margin-left: 20px;
+}
+
+.container__header{
+max-width: 1024px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 20px;
+
+}
+
+.header ul{
+    display: flex;
+}
+
+.header nav ul a{
+    margin: 0 11px;
+    
+}
+
+.header nav ul a:hover{
+    color: #170120;
+    
+}
+
+.img__header{
+    width: auto;
+}
+
+.divcajadenav{
+    display: flex;
+    width: 50%;
+}
+
+
+/* seccion hereo */
+
+.heroe{
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.container__heroe{
+   
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 70vh;
+}
+
+.heroe__img{
+    height: 100%;
+    margin-left: 20px;
+    width: 55%;
+}
+.foto{
+    width: 100%;
+    height: 100%;
+}
+
+.container__texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 70vh;
+}
+
+.textocontainer{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title{
+    font-size: var(--medium-font);
+    font-family: var(--fuente);
+    font-weight: bold;
+    line-height: 1;
+}
+.text{
+    font-family: var(--fuente-cursiva);
+    color:#22eabb;
+    font-size: 1.6rem;
+}
+
+/* seccion sobre mi */
+
+.sobremi{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sobremi__container{
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 70vh;
+}
+
+.sobremi__titulo{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title2{
+    font-size: var(--big-font);
+    font-family: var(--fuente);
+    font-weight: bold;
+    color: black;
+}
+
+.sobremi--span{
+    font-size: var(--medium-fontt);
+    font-family: var(--fuente);
+    padding: 0 40px 0 40px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.sobremi__redes{
+  /* background: rgb(96,94,94); */
+  display: flex;
+  width: 60%;
+  padding-bottom: 20px;
+  gap: 40px;
+  text-align: center;
+  justify-content: center;
+font-size: var(--medium-font);
+    
+}
+
+.sobremi__redes .link{
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+    
+.sobremi__redes .link:hover{
+    background-color: #04d8f8;
+    
+}
+
+.sobremi__img{
+    width: 45%;
+    display: flex;
+    align-content: flex-end;
+    height: 100%;
+}
+
+.sobremi__hitler{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/* seccion educacion */
+
+.educacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(/assets/img/fondochido.jpeg);
+    opacity: 0.7;
+}
+
+.container__educacion{
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #170120; */
+}
+
+.estudios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 10px;
+    flex-direction: column;
+    padding-right: 150px;
+}
+
+.divparalaimagen1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono__estudio{
+    width: 80px;
+    display: flex;
+    height: 80px;
+    align-self: center;
+    border-radius: 100%;
+    border: 4px solid #eee;
+}
+
+.estudio1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.estudio2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.estudios--contenido{
+    font-family: var(--fuente);
+    font-weight: bold;
+    font-size: var(--normal-font);
+}
+
+.estudio__span{
+    font-family: var(--fuente);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.educacion__titulo{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: var(--big-font);
+    font-family: var(--fuente);
+    font-weight: bold;
+
+}
+
+/* habilidades */
+
+.habilidades{
+    width: 100%;
+    background: url(/assets/img/fondo\ oscuro.jpeg);
+   display: flex;
+}
+
+.habilidades__container{
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 130px;
+
+}
+
+
+.habilidades__caja{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.15;
+    padding-left: 100px;
+    align-content: center;
+}
+
+.habilidades__titulo{
+    /* font-size: var(--big-font); */
+    font-family: var(--fuente);
+    font-weight: bold;
+    padding-bottom: 15px;
+    font-size: 1.40rem;
+}
+
+.habilidades__text{
+    font-size: var(--medium-font);
+    
+}
+
+.habilidades__img{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 100px;
+}
+
+.tarjeta{
+    width: 70px;
+    color: white;
+    font-size: .7rem;
+    text-align: center;
+    
+}
+
+.imgTarjeta{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(96,94,94);
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+.imgTarjeta:hover{
+    background-color: #ffffff;
+}
+
+.icono__habilidad{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+
+.tituloDeTarjeta{
+    font-weight: bold;
+    font-size: var(--fuente);
+}
+
+/* proyectos */
+
+.proyectos{
+    width: 100%;
+    background-image: url(/assets/img/fondo\ de\ proyectos.jpg);
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.proyecto__container{
+    width: 1024px;
+    display: flex;
+    padding-top: 180px; 
+    padding-bottom: 180px;
+    margin: 0px auto;
+
+}
+
+.cajadeproyectos{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.divparaproyecto{
+    background-image: url(/assets/img/fondo\ momentanio\ para\ plantilla\ del\ proyecto.jpg); 
+    display:flex;
+    align-items:flex-end;
+    justify-content: center;
+    width: 120px;
+    height: 220px;
+    border-radius: 6px;
+    margin: 20px;
+
+}
+
+.divparalabasedelproyecto{
+    display: flex;
+    text-align: center;
+
+}
+
+.titulodelproyecto{
+    color: black;
+    font-family: var(--fuente);
+    margin: 5px;
+}
+
+.cajadetexto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+
+.divparaeltitulo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    
+}
+
+.portafolio__titulo{
+    font-family: var(--fuente);
+    font-size: var(--big-font);
+}
+
+.portafolio__texto{
+    font-family: var(--fuente);
+
+}
+
+/* Aqui comienza contactos */
+.contacto{
+    width: 100%;
+    background-image: url(/assets/img/imagen\ de\ fondo\ opcional.webp);
+    background-size: cover;
+    opacity: 0.92;
+}
+
+.container__contacto{
+    width: 1024px;
+    display: flex;
+    column-gap: 200px;
+    padding-top: 150px; 
+    padding-bottom: 150px;
+}
+
+.contacto__text{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    padding-left: 70px;
+
+}
+
+/* .contacto__title{
+    font-size: var(--big-font);
+    font-family: var(--fuente);
+    
+}
+
+.cont__titulo{
+    font-size: var(--medium-font);
+    font-family: var(--fuente);
+    
+} */
+
+.text__present{
+    font-size: var(--big-font);
+    font-family: var(--fuente); 
+}
+
+.text__par{
+    font-size: var(--medium-fontt);
+    font-family: var(--fuente);
+
+}
+
+.contacto__form{
+    width: 50%;
+    row-gap: .7em;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.contact__inputtext{
+    width: 75%;
+    margin: 0 auto;
+    background: transparent;
+    color: white;
+    border-color: #888;
+
+}
+
+.contact__inputtext::placeholder {
+    color: white;
+}
+
+/* Aqui comienza le fooder */
+
+.footer{
+    width: 100%;
+    background: linear-gradient(to right, #22d9ea, #490863);
+    height: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__container{
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paracolocaralaizquierda{
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    align-items: center;
+}
+
+.paracolocaralaizquierda__footer__title{
+    font-family: var(--fuente-cursiva);
+    font-size: var(--medium-font);
+}
+
+.paraColocarEnLaEsquina{
+    display: flex;
+    align-items: center
+}
+
+.foot__text{
+    font-family: var(--fuente-cursiva);
+    font-size: var(--medium-font);
+}
+
+.paraColocarEnLaEsquina__text{
+    font-family: var(--fuente-cursiva);
+    font-size: var(--medium-font);
+}
+
+/* desde aqui comienza el responsivo- */
+
+
+/* responsivo a telefono */
+@media (min-width: 320px) and (max-width: 767px){
+
+
+    /* aqui comienza el header de telefono */
+    .header{
+    
+        position: fixed;
+    background: linear-gradient(to right, #22d9ea, #490863);
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 90px;
+
+    }
+    
+    .container__header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+    /* aqui comienza el heroe de telefono */
+    .heroe{
+        width: 100%;
+    }
+
+    .container__heroe{
+        width: 375px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    /* aqui comienza el sobremi */
+
+
+    /* Aqui comienza educacion */
+
+
+    
+    .educacion{
+        width: 100%;
+    }
+    
+    .container__educacion{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+
+    /* Aqui comienza habilidades */
+
+    .habilidades{
+        width: 100%;
+        display: flex;
+    ;
+    }
+
+    .habilidades__container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .habilidades__caja{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0;
+    }
+
+    .habilidades__titulo{
+        margin: 0 auto;
+    }
+
+    .habilidades__text{
+        margin: 0 auto;
+
+    }
+
+    .habilidades__img{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+    
+    
+
+    /* Aqui comienzo proyectos */
+
+    .proyectos{
+        width: 100%;
+    }
+
+    .proyecto__container{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;  
+    }
+
+
+    /*Aqui comienza contacto*/
+
+    .contacto{
+        width: 100%;
+    }
+
+    .container__contacto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0;
+    }
+
+    .contacto__text{
+        display: flex;
+        padding: 0;        
+    }
+
+
+}
